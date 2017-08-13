@@ -1,4 +1,4 @@
-# QueueP
+# <a href='https://github.com/pupudu/queuep'><img src='http://i.imgur.com/24TwZl4.png' height='100'></a>
 
 Pronounced: "queue-pea"
 
