@@ -1,0 +1,43 @@
+{
+  "name": "queuep-gitbook",
+  "version": "1.0.0",
+  "description": "QueueP documentation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pupudu/queuep-gitbook.git"
+  },
+  "keywords": [
+    "queuep",
+    "congestion-control",
+    "nodejs",
+    "flow-control",
+    "queuep-docs",
+    "flow",
+    "congestion",
+    "queue",
+    "queuep-redis",
+    "performance",
+    "javascript",
+    "publish",
+    "load",
+    "control",
+    "events",
+    "dirty",
+    "distinct",
+    "duplicate",
+    "filter"
+  ],
+  "author": "Pubudu Dodangoda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pupudu/queuep-gitbook/issues"
+  },
+  "homepage": "https://github.com/pupudu/queuep-gitbook#readme",
+  "devDependencies": {
+    "gitbook-cli": "^2.3.2"
+  }
+}
