@@ -1,6 +1,7 @@
 # Summary
 
 * [Readme](readme.md)
-* [Usage Patterns](chapter1.md)
-* [Concepts](README.md)
+* [Usage Patterns](usage-patterns.md)
+* [Concepts](concepts.md)
+* [Thanks](README.md)
 
