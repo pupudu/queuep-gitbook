@@ -1,4 +1,4 @@
-# Usage Patterns
+### Usage Patterns
 
 To make queuep flexible and blend with any type of code base, we have allowed different ways of interacting with the library. In other words, queuep usage will not look like some alien code in your code base.
 
@@ -47,7 +47,7 @@ QueueP is designed to support both callbacks and promises by default. All asynch
 ```js
 myQueue.publish("my_queue", key, data, () => {
     // Do something in this callback 
-})
+});
 ```
 
 or you can use the promise returned\(Do not provide the callback argument here\)
@@ -57,7 +57,7 @@ myQueue
     .publish("my_queue", key, data)
     .then(() => {
         // Do something in this callback 
-    })
+    });
 ```
 
 **All Callbacks in QueueP are error first callbacks, **meaning that the first argument will always be an error if any, and the proceeding arguments are optional data arguments.
@@ -72,7 +72,7 @@ let myQueue = qp.initQueue("my_queue", {
         return new Promise((resolve, reject) => {
             // Do some asyn task here and call reject or resolve to 
             // signal QueueP that the operation has finished executing
-        })
+        });
     }
 });
 ```
@@ -101,6 +101,3 @@ It is worth mentioning that some functions that queuep exposes are synchronous. 
 This is because these function implementations are trivial and we thought that an asynchronous interface would be just a burden for the QueueP users.
 
 ---
-
-
-

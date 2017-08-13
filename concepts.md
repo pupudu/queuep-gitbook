@@ -32,7 +32,7 @@ To demonstrate a custom dirty checker, let's say that you are publishing integer
 ```js
 let myQueue = qp.initQueue("my_queue", {
     consumer: someConsumer,
-    dirtyChecker: (oldNumber, newNumber) => {
+    dirtyChecker: function(oldNumber, newNumber) {
 
         if (newNumber > oldNumber) {
             return true;
@@ -54,7 +54,7 @@ For example,
 ```js
 let myQueue = qp.initQueue("my_queue", {
     consumer: someConsumer,
-    dirtyChecker: (oldData, newData) => {
+    dirtyChecker: function(oldData, newData) {
         if (oldData.property1 !== newData.property1) {
             return true;
         }
@@ -91,7 +91,7 @@ The 3rd concept of QueueP is that all important information about the queuep que
 You can use the `on` method of a queue to register an event listener to the queue. If you need to log the error every time something goes wrong when processing a published data chunk, you can register a listener as follows.
 
 ```js
-myQueue.on("error", (err)=> {
+myQueue.on("error", function(err) {
     logger.error(err.message);
 });
 ```
