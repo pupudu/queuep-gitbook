@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
-* [First Chapter](chapter1.md)
 * [Readme](readme.md)
+* [Usage Patterns](chapter1.md)
+* [Concepts](README.md)
 
